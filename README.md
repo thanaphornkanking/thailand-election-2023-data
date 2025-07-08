@@ -62,12 +62,12 @@ dfs = pd.ExcelFile('ectreport2023.xlsx')
 dfs.sheet_names
 ```
 ### 3️⃣ Explore Database
-✅ ดู Schema
-✅ ตรวจสอบ Columns, Types
-✅ แสดงตัวอย่าง (head)
-✅ ตรวจสอบ Nulls
-✅ Clean / fillna
-✅ Map รหัส → ชื่อพรรค/โลโก้/สี
+- ✅ ดู Schema
+- ✅ ตรวจสอบ Columns, Types
+- ✅ แสดงตัวอย่าง (head)
+- ✅ ตรวจสอบ Nulls
+- ✅ Clean / fillna
+- ✅ Map รหัส → ชื่อพรรค/โค้ด/สี
 ---
 Metadata: sheet page สำหรับอธิบาย ตัวแปรใน sheet อื่นๆ
 ---
