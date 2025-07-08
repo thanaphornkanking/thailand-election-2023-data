@@ -22,18 +22,6 @@
 
 ---
 
-## 🗂️ Data Sources
-
-**Main file**: `ectreport2023.xlsx`
-
-**Key sheets/tables:**
-- `result_constituencies_PartyList` → party-list vote results
-- `result_constituencies_Candidate` → constituency MP results
-- `result_constituencies_status` → turnout data
-- `info_province` → province metadata
-- `info_party_overview` → party info (name, color, logo)
-- `Candidate_Constituency`, `Candidate_PartyList`, `Candidate_PM` → candidate info
-
 ---
 
 ## 💻 Tech Stack
