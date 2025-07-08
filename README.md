@@ -183,3 +183,9 @@ table_merge3['cons_no'] = cons_no
 table_merge3.head(-10)
 ```
 ![Explore Database Schema](png15.png)
+
+### 4️⃣ Export
+บันทึกเป็นไฟล์ CSV พร้อมใช้
+```python
+table_merge.to_csv('table_merge_result.csv', index=False)
+```
