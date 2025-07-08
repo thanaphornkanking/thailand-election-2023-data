@@ -65,7 +65,7 @@ dfs.sheet_names
 - ดู Schema, ตรวจสอบ Columns, Types
 - ตรวจสอบ Nulls
 - Clean / fillna
-- ✅ Map รหัส → ชื่อพรรค/โค้ด/สี
+- Map รหัส/ชื่อพรรค/โค้ด/สี
 ---
 ✅ ดู Schema, ตรวจสอบ Columns, Types ตัวแปรใน sheet อื่นๆ
 ---
@@ -146,3 +146,40 @@ info_party_overview.head()
 ![Explore Database Schema](png11.png)
 
 จะเห็นได้ว่า party_no  เป็น false แล้วแสดงว่าไม่มีค่าว่าง
+
+---
+- ✅ Map รหัส/ชื่อพรรค/โค้ด/สี เพื่อเตียมข้อมูลไปใช้ในการทำ visualization
+---
+```python
+# เชื่อมตารางเพื่อ keep ข้อมูลชื่อ สส และ ชื่อ พรรคที่สังกัด
+result_constituencies_Candidate['mp_app_name'] = result_constituencies_Candidate['mp_app_id'].map(Candidate_constituency.set_index('mp_app_id')['mp_app_name'])
+result_constituencies_Candidate['party_name'] = result_constituencies_Candidate['party_id'].map(info_party_overview.set_index('id')['name'])
+```
+ตัวอย่างการรวมตารางเพื่อไปใช้ในการทำ visualization
+```python
+# ตารางจังหวัด (1)
+info_province.head(3)
+```
+![Explore Database Schema](png12.png)
+```python
+# ตารางเขตเลือกตั้ง (2)
+info_constituency.head(3)
+```
+![Explore Database Schema](png13.png)
+```python
+# (3) x (6)
+table_merge = result_constituencies_Candidate.merge(Candidate_constituency, how ='left', left_on='mp_app_id',right_on='mp_app_id')
+print(table_merge.shape)
+table_merge.head()
+```
+![Explore Database Schema](png14.png)
+```python
+cons_id = table_merge3['cons_id'].tolist()
+cons_no = []
+for i in range(len(cons_id)):
+  re = cons_id[i].split('_')[-1]
+  cons_no.append(re)
+table_merge3['cons_no'] = cons_no
+table_merge3.head(-10)
+```
+![Explore Database Schema](png15.png)
