@@ -64,7 +64,7 @@ dfs.sheet_names
 ### 3️⃣ Explore Database
 - ดู Schema, ตรวจสอบ Columns, Types
 - ตรวจสอบ Nulls
-- ✅ Clean / fillna
+- Clean / fillna
 - ✅ Map รหัส → ชื่อพรรค/โค้ด/สี
 ---
 ✅ ดู Schema, ตรวจสอบ Columns, Types ตัวแปรใน sheet อื่นๆ
@@ -111,3 +111,7 @@ print(Candidate_pm.isnull().any()) # เช็คค่าว่าง Null
 Candidate_pm.head()
 ```
 ![Explore Database Schema](png8.png)
+
+---
+✅ Clean / fillna
+---
