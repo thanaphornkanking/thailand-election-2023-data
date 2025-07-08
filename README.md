@@ -68,7 +68,9 @@ dfs.sheet_names
 ✅ ตรวจสอบ Nulls
 ✅ Clean / fillna
 ✅ Map รหัส → ชื่อพรรค/โลโก้/สี
+---
 Metadata: sheet page สำหรับอธิบาย ตัวแปรใน sheet อื่นๆ
+---
 ```python
 Schema.head()  
 ```
