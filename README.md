@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8523207d-44d9-4c47-abac-1bfd044e2362)# 🇹🇭 Thailand Election Data Preparation (2023)
+# 🇹🇭 Thailand Election Data Preparation (2023)
 
 > 📊 Google Colab notebook for preparing, exploring, and cleaning Thailand 2023 election data.  
 > โปรเจกต์โชว์ตัวอย่างงาน Data Wrangling และ EDA สำหรับพอร์ต Data Analyst
