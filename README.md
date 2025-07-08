@@ -199,4 +199,4 @@ table_merge.to_csv('table_merge_result.csv', index=False)
 - แผนที่แสดงการกระจายของผู้สมัครและผลคะแนน
 - ตารางอันดับผู้สมัครที่ได้คะแนนสูงสุด
 
-![Thailand Election Dashboard](png16.png)
+![Thailand Election Dashboard](png16.png)(https://lookerstudio.google.com/reporting/bb4dba67-182b-4a2c-a8db-55a1f2cac7a7)
