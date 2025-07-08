@@ -71,3 +71,4 @@ dfs.sheet_names
 ```python
 Schema.head()  # Metadata: sheet page สำหรับอธิบาย ตัวแปรใน sheet อื่นๆ
 ```
+![Explore Database Schema](png1.png)
