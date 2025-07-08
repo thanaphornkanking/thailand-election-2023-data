@@ -113,5 +113,5 @@ Candidate_pm.head()
 ![Explore Database Schema](png8.png)
 
 ---
-✅ Clean / fillna
+✅ กรณีมีค่า null จะทำการ Clean / fillna
 ---
