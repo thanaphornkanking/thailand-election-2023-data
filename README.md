@@ -52,3 +52,22 @@
 ```python
 from google.colab import drive
 drive.mount('/content/gdrive')
+```
+### 2️⃣ Import Data
+โหลดไฟล์ Excel
+แยกหลายชีทเป็น DataFrame
+```python
+import pandas as pd
+dfs = pd.ExcelFile('ectreport2023.xlsx')
+dfs.sheet_names
+```
+### 3️⃣ Explore Database
+✅ ดู Schema
+✅ ตรวจสอบ Columns, Types
+✅ แสดงตัวอย่าง (head)
+✅ ตรวจสอบ Nulls
+✅ Clean / fillna
+✅ Map รหัส → ชื่อพรรค/โลโก้/สี
+```python
+Schema.head()  # Metadata: sheet page สำหรับอธิบาย ตัวแปรใน sheet อื่นๆ
+```
