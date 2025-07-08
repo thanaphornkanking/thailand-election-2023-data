@@ -72,6 +72,7 @@ dfs.sheet_names
 ```python
 Schema.head()  
 ```
+---
 ![Explore Database Schema](png1.png)
 ---
 ✅ ตรวจสอบ Nulls
