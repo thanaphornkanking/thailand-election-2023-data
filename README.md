@@ -63,9 +63,7 @@ dfs.sheet_names
 ```
 ### 3️⃣ Explore Database
 - ดู Schema, ตรวจสอบ Columns, Types
-- ✅ ตรวจสอบ Columns, Types
-- ✅ แสดงตัวอย่าง (head)
-- ✅ ตรวจสอบ Nulls
+- ตรวจสอบ Nulls
 - ✅ Clean / fillna
 - ✅ Map รหัส → ชื่อพรรค/โค้ด/สี
 ---
@@ -75,3 +73,21 @@ dfs.sheet_names
 Schema.head()  
 ```
 ![Explore Database Schema](png1.png)
+---
+✅ ตรวจสอบ Nulls
+---
+```python
+print(result_constituencies_PartyList.isnull().any()) # เช็คค่าว่าง Null
+result_constituencies_PartyList.head() 
+```
+![Explore Database Schema](png2.png)
+```python
+print(result_constituencies_Candidate.isnull().any()) # เช็คค่าว่าง Null
+result_constituencies_Candidate.head()
+```
+![Explore Database Schema](png3.png)
+```python
+print(result_constituencies_status.isnull().any()) # เช็คค่าว่าง Null
+result_constituencies_status.head()
+```
+![Explore Database Schema](png4.png)
