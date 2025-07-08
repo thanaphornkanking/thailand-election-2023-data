@@ -1,4 +1,4 @@
-# 🇹🇭 Thailand Election Data Preparation (2023)
+![image](https://github.com/user-attachments/assets/8523207d-44d9-4c47-abac-1bfd044e2362)# 🇹🇭 Thailand Election Data Preparation (2023)
 
 > 📊 Google Colab notebook for preparing, exploring, and cleaning Thailand 2023 election data.  
 > โปรเจกต์โชว์ตัวอย่างงาน Data Wrangling และ EDA สำหรับพอร์ต Data Analyst
@@ -91,3 +91,23 @@ print(result_constituencies_status.isnull().any()) # เช็คค่าว่
 result_constituencies_status.head()
 ```
 ![Explore Database Schema](png4.png)
+```python
+print(info_province.isnull().any()) # เช็คค่าว่าง Null
+info_province.head()
+```
+![Explore Database Schema](png5.png)
+```python
+print(Candidate_constituency.isnull().any()) # เช็คค่าว่าง Null
+Candidate_constituency.head()
+```
+![Explore Database Schema](png6.png)
+```python
+print(Candidate_partyList.isnull().any()) # เช็คค่าว่าง Null
+Candidate_partyList.head()
+```
+![Explore Database Schema](png7.png)
+```python
+print(Candidate_pm.isnull().any()) # เช็คค่าว่าง Null
+Candidate_pm.head()
+```
+![Explore Database Schema](png8.png)
