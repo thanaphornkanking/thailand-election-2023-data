@@ -189,3 +189,14 @@ table_merge3.head(-10)
 ```python
 table_merge.to_csv('table_merge_result.csv', index=False)
 ```
+### 5️⃣ Dashboard Preview
+ตัวอย่าง **Dashboard** จาก Google Looker Studio  
+สรุป **ผลการเลือกตั้ง 2566 ของไทย** พร้อมภาพ Visualization:
+
+- ผู้ใช้สิทธิเลือกตั้งทั้งหมด
+- เปอร์เซ็นต์การใช้สิทธิ
+- ผลคะแนนพรรคการเมืองสำคัญ
+- แผนที่แสดงการกระจายของผู้สมัครและผลคะแนน
+- ตารางอันดับผู้สมัครที่ได้คะแนนสูงสุด
+
+![Thailand Election Dashboard](png16.png)
