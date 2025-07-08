@@ -20,10 +20,6 @@
 - Merge data sources into a single table
 - Export cleaned CSV
 
----
-
----
-
 ## 💻 Tech Stack
 
 - Google Colab
