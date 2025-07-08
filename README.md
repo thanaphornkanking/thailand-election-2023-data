@@ -143,5 +143,6 @@ info_party_overview['party_no'] = info_party_overview['party_no'].fillna(99)
 print(info_party_overview.isnull().any()) # เช็คค่าว่าง Null อีกรอบ
 info_party_overview.head()
 ```
-
 ![Explore Database Schema](png11.png)
+
+จะเห็นได้ว่า party_no  เป็น false แล้วแสดงว่าไม่มีค่าว่าง
