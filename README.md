@@ -131,11 +131,13 @@ info_party_overview[info_party_overview['party_no'].isnull()] #แสดง row 
 # รักษ์ธรรม - 99
 ```
 ![Explore Database Schema](png10.png)
+
 โดยจะทำการเติมค่าว่าด้วย 99
 ```python
 # แทนค่าว่างด้วยหมายเลข 99
 info_party_overview['party_no'] = info_party_overview['party_no'].fillna(99)
 ```
+
 จากนั้นเรียกมาดูเพื่อเช็คอีกรอบ
 ```python
 print(info_party_overview.isnull().any()) # เช็คค่าว่าง Null อีกรอบ
